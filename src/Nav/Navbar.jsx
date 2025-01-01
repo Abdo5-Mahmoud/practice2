@@ -4,7 +4,7 @@ const menu = ["MENU", "LOACTION", "ABOUT", "CONTACT"];
 
 function Navbar() {
   return (
-    <nav className="flex items-center justify-between bg-slate-50 p-2">
+    <nav className="flex max-w-[80%] items-center justify-between bg-slate-50 p-2 m-auto">
       <img src={logo} width={76} height={50} alt="" />
       <ul className="flex items-center justify-between space-x-2 font-mono">
         {menu.map((link, index) => (
