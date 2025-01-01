@@ -3,12 +3,12 @@ import shoes from "../imges/shoes.png";
 import "./main.scss";
 const Main = () => {
   return (
-    <main className="width-full flex h-[90vh] w-full items-center justify-center gap-1 rounded-3xl bg-rose-50 p-4 pt-10 shadow-lg max-md:flex-col">
+    <main className="width-full flex min-h-[90vh] min-w-full items-center justify-center gap-10 rounded-3xl bg-rose-50 p-4 pt-10 shadow-lg max-md:h-[130vh] max-md:flex-col">
       <div className="flex-1">
         <h1 className="mb-5 text-start text-[80px] font-extrabold capitalize leading-[70px]">
           Your Feet Deserve The Best
         </h1>
-        <p className="text-start">
+        <p className="text-start max-md:text-center">
           YOUR FEET DESERVE THE BEST AND WE’RE HERE TO HELP YOU WITH OUR
           SHOES.YOUR FEET DESERVE THE BEST AND WE’RE HERE TO HELP YOU WITH OUR
           SHOES.
@@ -18,8 +18,8 @@ const Main = () => {
           <Button type="secondary">Category</Button>
         </div>
       </div>
-      <div className="stage-cube flex-1 overflow-hidden">
-        <div className="cubeContainer">
+      <div className="stage-cube relative overflow-hidden">
+        <div className="cubeContainer md:mt-52">
           <div className="face1">
             <img src={shoes} className="max-w-full" alt="" />
           </div>
